@@ -171,7 +171,7 @@ input {
 .section-title {
   /* The <div> with class section-title contains an <h3> child which we want to center */
   /* The easiest way to center child elements is to set the display property to 'flex' and justify the content */
-  align-items: center;
+  text-align: center;
 }
 
 .single-destination {
@@ -179,41 +179,69 @@ input {
   /* Set the overflow to 'hidden' */
   /* The overflow CSS shorthand property sets the desired behaviour for an element's overflow 
     — i.e. when an element's content is too big to fit. In this case, the image is too big too fit. */
-  
+  margin: 5px;
+  overflow: hidden;
 }
 
 img {
   /* Set the max-width property to 100% */
+  width: 1005;
 }
 
 /* Let's take the training wheels off. Finish off the page by adding styles to the remaining blocks */
 
 .testimonial-area {
   /* Write your code here */
+  background-color: #384052;
+  padding: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 .single-testmonial{
   /* Write your code here */
+  background-color: #f0f8fe;
+  padding: 0px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .footer {
   /* Write your code here */
+  background-color: #040d27;
+  color: #fff;
+  padding: 2rem;
+  padding-left: 5rem;
 }
 
 .footer-widget p {
   /* Write your code here */
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .footer-widget a:hover {
    /* Write your code here */
+   text-decoration: underline;
 }
 
 .footer-widget ul li {
   /* Write your code here */
+  color: #fff;
+  padding-bottom: 1rem;
 }
 
 .footer-widget a {
    /* Write your code here */
+   color: #fff;
+   padding-top: 1rem;
+   font-size: 10px;
 }
 
 /* Media Queries */
@@ -222,4 +250,12 @@ img {
     /* Add some responsive code here */
     /* Make the destinations stack on top of each other */
     /* Make the form input stack on top of each other */
-}
+  .single-destination{
+    display: flex;
+    flex-direction: column;
+  }
+  .search-form{
+    display: flex;
+    flex-direction: column;
+  }
+  }
